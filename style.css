@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body {
+    font-family: "Poppins", sans-serif;
+}
+.Container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+.header{
+    background-image:linear-gradient(
+        rgba(40, 4, 4, 0.7),
+        rgba(38, 16, 16, 0.7)),
+        url(IMG/HEADER.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ICONOMENU{
+    width: 40px; 
+  height: auto;
+}
+.logo{
+    color: bisque;
+    font-size: 25px;
+    font-weight: 800;
+}
+.navmenu ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.navmenu ul li a {
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 18px;
+}
+.navmenu ul li a:hover {
+    color: blueviolet;
+}
+#menu {
+    display: none;
+}
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+.header-content {
+    text-align: center;
+}
+.header-content h1{
+    font-size: 40px;
+    line-height: 40px;
+    color: rgb(233, 190, 190);
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+.header-content p {
+    font-size: 20px;
+    color: rgb(244, 244, 245);
+    padding: 10 100px;
+    margin-bottom: 25;
+}
+html {
+    scroll-behavior: smooth;
+}
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: rgb(111, 2, 84);
+    color: rgb(18, 1, 11);
+    margin-bottom: 50;
+}
+.btn-1:hover {
+    color: rgb(227, 223, 223);
+}
+.MISIONVISION {
+    padding: 100px 0;
+    background-color: rgb(184, 187, 231);
+    position: relative;
+}
+.MISIONVISION-content {
+    text-align: center;
+}
+.MISIONVISION-content h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: antiquewhite;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 20px;
+}
+.text-p {
+    font-size: 16px;
+    color: rgb(236, 241, 244);
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+.bloque-mv {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.bloque-mv .text-p {
+  width: 50%;
+  margin: 0;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgb(170, 155, 213);
+  overflow: auto;
+}
+
+.bloque-mv img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.MOTIVACIONES {
+  padding: 40px 20px;
+  background-color: #f0f8ff;
+  text-align: center;
+}
+
+.motivaciones-grid {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.motivacion {
+  flex: 1 1 22%;
+  background-color: #d0ebff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.motivacion h2 {
+  font-size: 20px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.motivacion p {
+  font-size: 14px;
+  color: #222;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .motivaciones-grid {
+    flex-direction: column;
+  }
+
+  .motivacion {
+    width: 100%;
+  }
+}
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+  width: 100%;
+}
+
+footer .footer.Container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer ul li a:hover {
+  color: #fff;
+}
+
+
+.formulario {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+
+/* Título */
+.formulario h1 {
+  margin-bottom: 20px;
+}
+
+/* Contenedores de usuario y contraseña */
+.usuario, .contraseña {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Etiquetas */
+.usuario label, .contraseña label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Inputs */
+.usuario input, .contraseña input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Botón */
+input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4a0d67;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #360a4b;
+}
+.recuerdame {
+  margin-top: 15px;
+}
+
+.recuerdame a {
+  color: #4a0d67;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.recuerdame a:hover {
+  text-decoration: underline;
+}
+
+.formulario2 {
+  background-color: #f5f6f7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+}
+
+.formulario2 h1 {
+  text-align: center;
+  color: #000407;
+  margin-bottom: 20px;
+}
+
+.formulario2 label {
+  display: block;
+  margin-bottom: 5px;
+  color: #050607;
+}
+
+.formulario2 input[type="text"],
+.formulario2 input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Botón */
+.formulario2 input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #4d0740;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.formulario2 input[type="submit"]:hover {
+  background-color: #7d0d4d;
+}
